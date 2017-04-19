@@ -1,0 +1,1998 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.98.5935.13216"?>
+<regions>
+  <settings>
+    <identity>
+      <id>43e88af0-c0f9-46de-882d-1354dce26b92</id>
+      <revision>54</revision>
+    </identity>
+    <calculation>
+      <precision>2</precision>
+      <exponentialThreshold>4</exponentialThreshold>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="39" bottom="39" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.98.5935.13216" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Text Region" version="1.10.5935.13221" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="Math Region" version="0.98.5935.13216" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Special Functions" version="1.11.5935.13219" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+    </dependencies>
+  </settings>
+  <region id="0" left="0" top="0" width="251" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">Generic Calculation Worksheet</p>
+    </text>
+  </region>
+  <region id="1" top="36" color="#000000" bgColor="#ffffff">
+    <area collapsed="true">
+      <title lang="eng">
+        <p>Units and useful function definitions</p>
+      </title>
+    </area>
+    <region id="2" left="0" top="63" width="115" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" preserve="false" style="unit">arcsec</e>
+          <e type="operand" style="unit">deg</e>
+          <e type="operand">3600</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="3" left="144" top="63" width="109" height="50" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand" preserve="false" style="unit">mas</e>
+          <e type="operand" preserve="false" style="unit">arcsec</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="4" left="270" top="63" width="109" height="50" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand" preserve="false" style="unit">μas</e>
+          <e type="operand" preserve="false" style="unit">arcsec</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="5" left="459" top="63" width="143" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" preserve="false" style="unit">AU</e>
+          <e type="operand">149.6</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">km</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="6" left="621" top="72" width="77" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" preserve="false" style="unit">ly</e>
+          <e type="operand" style="unit">c</e>
+          <e type="operand" style="unit">yr</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="7" left="621" top="99" width="84" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" preserve="false" style="unit">wk</e>
+          <e type="operand">7</e>
+          <e type="operand" style="unit">day</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="8" left="0" top="108" width="112" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand" preserve="false" style="unit">THz</e>
+          <e type="operand">10</e>
+          <e type="operand">12</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="9" left="360" top="117" width="130" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand" preserve="false" style="unit">nrad</e>
+          <e type="operand">10</e>
+          <e type="operand">9</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">rad</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="10" left="180" top="135" width="130" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand" preserve="false" style="unit">μrad</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">rad</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="11" left="585" top="162" width="53" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand" preserve="false" style="unit">ph</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="12" left="0" top="171" width="132" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">r.Earth</e>
+          <e type="operand">6371</e>
+          <e type="operand" style="unit">km</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="13" left="333" top="171" width="100" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" preserve="false" style="unit">pc</e>
+          <e type="operand" preserve="false" style="unit">AU</e>
+          <e type="operand" preserve="false" style="unit">arcsec</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="14" left="189" top="180" width="116" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" preserve="false" style="unit">LD</e>
+          <e type="operand">384400</e>
+          <e type="operand" style="unit">km</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="15" left="585" top="180" width="62" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" preserve="false" style="unit">pix</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="16" left="63" top="189" width="61" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">radius</e>
+        </input>
+      </math>
+    </region>
+    <region id="17" left="585" top="207" width="121" height="33" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" preserve="false" style="unit">Mpix</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" preserve="false" style="unit">pix</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="18" left="0" top="225" width="139" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="4">
+        <input>
+          <e type="operand">D.moon</e>
+          <e type="operand">3474.8</e>
+          <e type="operand" style="unit">km</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="19" left="162" top="225" width="143" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="4">
+        <input>
+          <e type="operand">Vmag.moon</e>
+          <e type="operand">12.74</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="20" left="387" top="225" width="135" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="4">
+        <input>
+          <e type="operand">Vmag.sun</e>
+          <e type="operand">26.74</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="21" left="0" top="252" width="166" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m.sun</e>
+          <e type="operand">1.989</e>
+          <e type="operand">10</e>
+          <e type="operand">30</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="22" left="171" top="252" width="183" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m.earth</e>
+          <e type="operand">5.972</e>
+          <e type="operand">10</e>
+          <e type="operand">24</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="23" left="0" top="306" width="716" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Photon flux for apparent magnitude M, for a band with 0-mag flux F0 and width dlam/lam</p>
+      </text>
+    </region>
+    <region id="24" left="0" top="333" width="355" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Mag</e>
+          <e type="operand">E.0</e>
+          <e type="operand">λ</e>
+          <e type="operand">dλ</e>
+          <e type="function" args="4">Flux</e>
+          <e type="operand">E.0</e>
+          <e type="operand" style="unit">h</e>
+          <e type="operand" style="unit">c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">λ</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operand">Mag</e>
+          <e type="operand">2.5</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">dλ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="25" left="414" top="351" width="85" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>35,786 km</p>
+      </text>
+    </region>
+    <region id="26" left="432" top="405" width="123" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">h.GEO</e>
+          <e type="operand">35786</e>
+          <e type="operand" style="unit">km</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="27" left="0" top="414" width="316" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Astronomical V and R band definitions</p>
+      </text>
+    </region>
+    <region id="28" left="0" top="450" width="181" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">E.V0</e>
+          <e type="operand">3.92</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">μm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="29" left="198" top="450" width="181" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">E.R0</e>
+          <e type="operand">1.76</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">μm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="30" left="423" top="450" width="181" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">E.Y0</e>
+          <e type="operand">5.72</e>
+          <e type="operand">10</e>
+          <e type="operand">9</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">μm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="31" left="198" top="495" width="91" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">λ.R</e>
+          <e type="operand">700</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="32" left="423" top="495" width="99" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">λ.Y</e>
+          <e type="operand">1050</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="33" left="0" top="504" width="91" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">λ.V</e>
+          <e type="operand">550</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="34" left="198" top="531" width="99" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">dλ.R</e>
+          <e type="operand">220</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="35" left="423" top="531" width="99" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">dλ.Y</e>
+          <e type="operand">200</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="36" left="0" top="540" width="90" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">dλ.V</e>
+          <e type="operand">89</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="37" left="0" top="576" width="320" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">0</e>
+          <e type="operand">E.Y0</e>
+          <e type="operand">λ.Y</e>
+          <e type="operand">dλ.Y</e>
+          <e type="function" args="4">Flux</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">6.05</e>
+          <e type="operand">10</e>
+          <e type="operand">9</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="38" left="0" top="639" width="974" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="2" decimalPlaces="3">
+        <input>
+          <e type="operand">λ</e>
+          <e type="function" args="1">PLFit</e>
+          <e type="operand">1.742</e>
+          <e type="operand">10</e>
+          <e type="operand">32</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">λ</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">6.457</e>
+          <e type="operand">10</e>
+          <e type="operand">26</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">λ</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">9.37</e>
+          <e type="operand">10</e>
+          <e type="operand">20</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">λ</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">6.634</e>
+          <e type="operand">10</e>
+          <e type="operand">14</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">λ</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">2.263</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">λ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">36.78</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">0.4</e>
+          <e type="operand">Mag</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="39" left="0" top="684" width="452" height="61" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">λ</e>
+          <e type="operand">Δλ</e>
+          <e type="operand">Mag</e>
+          <e type="function" args="3">fluxCurve</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">μm</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">h</e>
+          <e type="operand" style="unit">c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">λ</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">Δλ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operand">λ</e>
+          <e type="function" args="1">PLFit</e>
+          <e type="operator" args="2">^</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="40" left="0" top="756" width="501" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Error function for the normal and exponential distributions </p>
+      </text>
+    </region>
+    <region id="41" left="0" top="783" width="278" height="80" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">SNR</e>
+          <e type="function" args="1">probGau</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" preserve="true" args="1">sqrt</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">e</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">y</e>
+          <e type="operand">SNR</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">SNR</e>
+          <e type="function" preserve="true" args="4">int</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="42" left="360" top="792" width="205" height="66" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">SNR</e>
+          <e type="function" args="1">probExp</e>
+          <e type="operand">e</e>
+          <e type="operand">y</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">y</e>
+          <e type="operand">0</e>
+          <e type="operand">SNR</e>
+          <e type="function" preserve="true" args="4">int</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="43" left="0" top="864" width="169" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="1">probGau</e>
+          <e type="operator" args="2">-</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.05</e>
+        </result>
+      </math>
+    </region>
+    <region id="44" left="369" top="864" width="169" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">1</e>
+          <e type="operand">5</e>
+          <e type="function" args="1">probExp</e>
+          <e type="operator" args="2">-</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.01</e>
+        </result>
+      </math>
+    </region>
+    <region id="45" left="27" top="918" width="161" height="53" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">dB</e>
+          <e type="function" args="1">dBratio</e>
+          <e type="operand">10</e>
+          <e type="operand">dB</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="46" top="981" color="#000000" bgColor="#ffffff">
+      <area terminator="true" />
+    </region>
+  </region>
+  <region id="47" left="0" top="1008" width="537" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">Understanding the photometry of Coronagraph SNR and planet yield</p>
+    </text>
+  </region>
+  <region id="48" left="0" top="1035" width="764" height="104" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>The coronagraph contrast is a per-pixel quantity. John Krist uses a PROPER model of the telescope and coronagraph to determine the response of the system to an input wavefront. He first sends a wavefront originating from (0,0) and gets the resulting speckles, that is, at field location (u,v) he gets the intensity I(u,v; 0,0) where the second pair of argumentsdescribes the object location in the field. He then repeats the process with the object at (u,v), getting I(u,v;u,v). The ratio of the two is the contrast at (u,v).</p>
+    </text>
+  </region>
+  <region id="49" left="0" top="1152" width="754" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>The planet contrast is very different from coronagraph contrast. This is the flux from the planet, at the telescope, divided by the flux from the star. </p>
+    </text>
+  </region>
+  <region id="50" left="0" top="1206" width="527" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">In what follows, assume that the signal region is the PSF core.</p>
+    </text>
+  </region>
+  <region id="51" top="1242" color="#000000" bgColor="#ffffff">
+    <area collapsed="false">
+      <title lang="eng">
+        <p>Instrument Parameters</p>
+      </title>
+    </area>
+    <region id="52" left="0" top="1278" width="82" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">λ</e>
+          <e type="operand">550</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="53" left="99" top="1278" width="68" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">BW</e>
+          <e type="operand">0.1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="54" left="189" top="1278" width="118" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">sampling</e>
+          <e type="operand">0.3</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="55" left="306" top="1278" width="127" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>pixels/(lam/D)</p>
+      </text>
+    </region>
+    <region id="56" left="459" top="1278" width="125" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">Δλ</e>
+          <e type="operand">λ</e>
+          <e type="operand">BW</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">nm</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">55</e>
+        </result>
+      </math>
+    </region>
+    <region id="57" left="0" top="1314" width="91" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">D.PM</e>
+          <e type="operand">2.4</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="58" left="90" top="1314" width="287" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>telescope primary mirror diameter </p>
+      </text>
+    </region>
+    <region id="59" left="423" top="1314" width="68" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">QE</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="60" left="504" top="1314" width="102" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>detector QE</p>
+      </text>
+    </region>
+    <region id="61" left="0" top="1350" width="321" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">A.col</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">D.PM</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">.34</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0.95</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">3.801</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="62" left="306" top="1359" width="289" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>34% SM diam. &amp; 5% obsc from struts</p>
+      </text>
+    </region>
+    <region id="63" left="0" top="1395" width="212" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">dΩ.PSF</e>
+          <e type="operand">2.01</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" preserve="false" style="unit">arcsec</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="64" left="198" top="1404" width="168" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>PSF core on the sky</p>
+      </text>
+    </region>
+    <region id="65" left="0" top="1431" width="194" height="52" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">mpix</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operand">0.3</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8.727</e>
+        </result>
+      </math>
+    </region>
+    <region id="66" left="189" top="1449" width="512" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>pixels under the PSF core assuming the sampling used by Krist</p>
+      </text>
+    </region>
+    <region id="67" left="0" top="1485" width="166" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="1">
+        <input>
+          <e type="operand">lamD</e>
+          <e type="operand">λ</e>
+          <e type="operand">D.PM</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" preserve="false" style="unit">mas</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">47.3</e>
+        </result>
+      </math>
+    </region>
+    <region id="68" left="189" top="1494" width="332" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Diffraction limit of the primary mirror</p>
+      </text>
+    </region>
+    <region id="69" top="1539" color="#000000" bgColor="#ffffff">
+      <area terminator="true" />
+    </region>
+  </region>
+  <region id="70" top="1557" color="#000000" bgColor="#ffffff">
+    <area collapsed="false">
+      <title lang="eng">
+        <p>Throughput Contributions</p>
+      </title>
+    </area>
+    <region id="71" left="9" top="1584" width="93" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="2" decimalPlaces="3">
+        <input>
+          <e type="operand">τ.ref</e>
+          <e type="operand">0.53</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="72" left="189" top="1593" width="512" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>transmissions &amp; reflections (to match total τ from Hong Tang)</p>
+      </text>
+    </region>
+    <region id="73" left="9" top="1638" width="85" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">τ.fil</e>
+          <e type="operand">0.9</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="74" left="117" top="1638" width="527" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>transmission, within band, of the 10% BW filter (per Hong Tang)</p>
+      </text>
+    </region>
+    <region id="75" left="9" top="1683" width="93" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">τ.pol</e>
+          <e type="operand">0.48</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="76" left="108" top="1683" width="86" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">polarizer</e>
+        </input>
+      </math>
+    </region>
+    <region id="77" left="9" top="1728" width="68" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">τ.pup</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="78" left="99" top="1728" width="324" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>pupil mask obscuration (HLC case here)</p>
+      </text>
+    </region>
+    <region id="79" left="9" top="1773" width="101" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">τ.occ</e>
+          <e type="operand">0.394</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="80" left="108" top="1773" width="658" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>"occulter transmission" in John Krist contrast tables:   τ.pup * τ.FPM * τ.Lyot  </p>
+      </text>
+    </region>
+    <region id="81" left="9" top="1818" width="109" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="2" decimalPlaces="4">
+        <input>
+          <e type="operand">τ.core</e>
+          <e type="operand">0.031</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="82" left="126" top="1818" width="397" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>"core throughput" in John Krist contrast tables</p>
+      </text>
+    </region>
+    <region id="83" left="9" top="1854" width="171" height="57" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">τ.PSF</e>
+          <e type="operand">τ.core</e>
+          <e type="operand">τ.occ</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.079</e>
+        </result>
+      </math>
+    </region>
+    <region id="84" left="189" top="1872" width="593" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>fraction of planet light that is in the PSF core region, HLC, 5.4 lam/D</p>
+      </text>
+    </region>
+    <region id="85" top="1944" color="#000000" bgColor="#ffffff">
+      <area terminator="true" />
+    </region>
+  </region>
+  <region id="86" top="1980" color="#800000" bgColor="#ffffff">
+    <area collapsed="false">
+      <title lang="eng">
+        <p>Star and Speckle</p>
+      </title>
+    </area>
+    <region id="87" left="0" top="2007" width="428" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>pick a star. e.g. 47 UMa has a V magnitude of 5.04:</p>
+      </text>
+    </region>
+    <region id="88" left="450" top="2007" width="101" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">V.star</e>
+          <e type="operand">5.04</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="89" left="567" top="2007" width="86" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>magnitude</p>
+      </text>
+    </region>
+    <region id="90" left="0" top="2034" width="350" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">Φ</e>
+          <e type="operand">λ</e>
+          <e type="operand">Δλ</e>
+          <e type="operand">V.star</e>
+          <e type="function" args="3">fluxCurve</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5.6</e>
+          <e type="operand">10</e>
+          <e type="operand">7</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="91" left="351" top="2043" width="283" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>star flux incident on the primary</p>
+      </text>
+    </region>
+    <region id="92" left="0" top="2088" width="582" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p bold="true">What is the total electron rate into the signal region, the PSF core? </p>
+      </text>
+    </region>
+    <region id="93" left="0" top="2115" width="762" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>In John Krist's contrast tables, there is a column I which gives the intensity distribution per pixel (in his sampling) assuming unit power on the unobscured part of the primary. This is the contrast we want. </p>
+      </text>
+    </region>
+    <region id="94" left="0" top="2178" width="129" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">C.CG</e>
+          <e type="operand">4.7</e>
+          <e type="operand">10</e>
+          <e type="operand">10</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="95" left="144" top="2187" width="546" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>2014 HLC table, 0.4 mas jitter, labeled contrast0.4, at 5.4 lam/D</p>
+      </text>
+    </region>
+    <region id="96" left="0" top="2223" width="129" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">I.pk</e>
+          <e type="operand">3.96</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="97" left="144" top="2232" width="626" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>2014 HLC table, intensity at PSF peak pixel, labeled PSF_peak, at 5.4 lam/D</p>
+      </text>
+    </region>
+    <region id="98" left="0" top="2268" width="227" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">C.sp</e>
+          <e type="operand">C.CG</e>
+          <e type="operand">I.pk</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.861</e>
+          <e type="operand">10</e>
+          <e type="operand">12</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="99" left="225" top="2277" width="528" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Coronagraph contrast as intensity (u,v) / total collected power</p>
+      </text>
+    </region>
+    <region id="100" left="432" top="2304" width="187" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">C.CG</e>
+          <e type="operand">I.pk</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.861</e>
+          <e type="operand">10</e>
+          <e type="operand">12</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="101" left="162" top="2313" width="231" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">τ.sp</e>
+          <e type="operand">τ.ref</e>
+          <e type="operand">τ.fil</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.pol</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.229</e>
+        </result>
+      </math>
+    </region>
+    <region id="102" left="0" top="2349" width="471" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">r.sp</e>
+          <e type="operand">Φ</e>
+          <e type="operand">C.CG</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">I.pk</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">mpix</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">A.col</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.ref</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.fil</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.pol</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">QE</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">7.12</e>
+          <e type="operand">10</e>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="103" left="504" top="2358" width="210" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>new improved calculation</p>
+      </text>
+    </region>
+    <region id="104" left="0" top="2421" width="294" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">rphpixel.sp</e>
+          <e type="operand">r.sp</e>
+          <e type="operand">mpix</e>
+          <e type="operand">QE</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">9.07</e>
+          <e type="operand">10</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="105" left="306" top="2430" width="152" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>photons per pixel</p>
+      </text>
+    </region>
+    <region id="106" left="0" top="2484" width="331" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p bold="true">Operating WFIRST as HST style telescope</p>
+      </text>
+    </region>
+    <region id="107" left="0" top="2520" width="312" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Observed lab signal:  0.002 e-/pix/fr</p>
+      </text>
+    </region>
+    <region id="108" left="333" top="2520" width="126" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">τ.psfcore</e>
+          <e type="operand">0.34</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="109" left="459" top="2520" width="139" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>fraction within psf core</p>
+      </text>
+    </region>
+    <region id="110" left="621" top="2520" width="95" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="1">
+        <input>
+          <e type="operand">mpix</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8.7</e>
+        </result>
+      </math>
+    </region>
+    <region id="111" left="621" top="2538" width="135" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>pixels per core</p>
+      </text>
+    </region>
+    <region id="112" left="0" top="2556" width="101" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="4">
+        <input>
+          <e type="operand">mag.star</e>
+          <e type="operand">35</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="113" left="621" top="2574" width="143" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">τ.ref</e>
+          <e type="operand">τ.fil</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.48</e>
+        </result>
+      </math>
+    </region>
+    <region id="114" left="0" top="2583" width="478" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">Φ.eff</e>
+          <e type="operand">550</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">89</e>
+          <e type="operand" style="unit">nm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">mag.star</e>
+          <e type="function" args="3">fluxCurve</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">9.401</e>
+          <e type="operand">10</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="115" left="621" top="2610" width="78" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">QE</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.9</e>
+        </result>
+      </math>
+    </region>
+    <region id="116" left="0" top="2628" width="445" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">r.conv</e>
+          <e type="operand">Φ.eff</e>
+          <e type="operand">τ.psfcore</e>
+          <e type="operand">mpix</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">A.col</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.ref</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.fil</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">QE</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">5.977</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="117" left="450" top="2646" width="78" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>el/pix/s</p>
+      </text>
+    </region>
+    <region id="118" left="0" top="2691" width="242" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Assuming a 500 sec exposure:</p>
+      </text>
+    </region>
+    <region id="119" left="0" top="2727" width="238" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="5">
+        <input>
+          <e type="operand">n.conv</e>
+          <e type="operand">500</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">r.conv</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.00299</e>
+        </result>
+      </math>
+    </region>
+    <region id="120" left="225" top="2727" width="379" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>electrons in 1 pixel in a 500 second exposure</p>
+      </text>
+    </region>
+    <region id="121" top="2763" color="#000000" bgColor="#ffffff">
+      <area terminator="true" />
+    </region>
+  </region>
+  <region id="122" top="2790" color="#000000" bgColor="#ffffff">
+    <area collapsed="false">
+      <title lang="eng">
+        <p>Planet Contrast</p>
+      </title>
+    </area>
+    <region id="123" left="9" top="2817" width="347" height="24" color="#800000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p bold="true">Planet (47 UMa c) from the RV hosts table</p>
+      </text>
+    </region>
+    <region id="124" left="576" top="2817" width="177" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">r.Earth</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">6.371</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="125" left="810" top="2835" width="250" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="0">
+        <input>
+          <e type="operand">n.pixDH</e>
+          <e type="operand">π</e>
+          <e type="operand">4</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">3</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">643</e>
+        </result>
+      </math>
+    </region>
+    <region id="126" left="1053" top="2844" width="200" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>pixels in the dark hole</p>
+      </text>
+    </region>
+    <region id="127" left="9" top="2853" width="61" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">radius</e>
+        </input>
+      </math>
+    </region>
+    <region id="128" left="72" top="2853" width="142" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">r.pl</e>
+          <e type="operand">12.7</e>
+          <e type="operand">r.Earth</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="129" left="270" top="2853" width="101" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">albedo</e>
+          <e type="operand">0.4</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="130" left="369" top="2853" width="127" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Jupiter albedo</p>
+      </text>
+    </region>
+    <region id="131" left="810" top="2880" width="240" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">rphpixel.sp</e>
+          <e type="operand">n.pixDH</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.058</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="132" left="9" top="2889" width="99" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">sma</e>
+          <e type="operand">3.6</e>
+          <e type="operand" preserve="false" style="unit">AU</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="133" left="108" top="2889" width="241" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>planet orbit semi-major axis</p>
+      </text>
+    </region>
+    <region id="134" left="387" top="2889" width="91" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">α.p</e>
+          <e type="operand">90</e>
+          <e type="operand" style="unit">deg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="135" left="477" top="2889" width="151" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>orbit phase angle</p>
+      </text>
+    </region>
+    <region id="136" left="9" top="2925" width="214" height="45" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="2" decimalPlaces="3">
+        <input>
+          <e type="operand">α</e>
+          <e type="function" args="1">φ</e>
+          <e type="operand">α</e>
+          <e type="function" preserve="true" args="1">sin</e>
+          <e type="operand">π</e>
+          <e type="operand">α</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">α</e>
+          <e type="function" preserve="true" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="137" left="234" top="2934" width="307" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>phase law or integral phase function</p>
+      </text>
+    </region>
+    <region id="138" left="558" top="2934" width="115" height="34" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">α.p</e>
+          <e type="function" args="1">φ</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.318</e>
+        </result>
+      </math>
+    </region>
+    <region id="139" left="9" top="2970" width="311" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">C.pl</e>
+          <e type="operand">albedo</e>
+          <e type="operand">α.p</e>
+          <e type="function" args="1">φ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">r.pl</e>
+          <e type="operand">sma</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2.874</e>
+          <e type="operand">10</e>
+          <e type="operand">9</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="140" left="369" top="2997" width="315" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>This is the estimated planet contrast</p>
+      </text>
+    </region>
+    <region id="141" left="9" top="3051" width="713" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p bold="true">What is the total electron rate from the planet into the signal region, the PSF core? </p>
+      </text>
+    </region>
+    <region id="142" left="9" top="3078" width="351" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">τ.pl</e>
+          <e type="operand">τ.pup</e>
+          <e type="operand">τ.occ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.PSF</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.ref</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.fil</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.pol</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.007</e>
+        </result>
+      </math>
+    </region>
+    <region id="143" left="9" top="3132" width="275" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">r.pl</e>
+          <e type="operand">Φ</e>
+          <e type="operand">C.pl</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">A.col</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.pl</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">QE</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.004</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="144" left="315" top="3141" width="414" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>electron rate within the PSF core from the planet</p>
+      </text>
+    </region>
+    <region id="145" left="9" top="3186" width="684" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Except for changes in some of the throughputs this rate is unchanged from previous</p>
+      </text>
+    </region>
+    <region id="146" top="3231" color="#000000" bgColor="#ffffff">
+      <area terminator="true" />
+    </region>
+  </region>
+  <region id="147" left="0" top="3276" width="462" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p bold="true">Compare with a typical target planet near a 5 mag star:</p>
+    </text>
+  </region>
+  <region id="148" left="0" top="3303" width="147" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math decimalPlaces="3">
+      <input>
+        <e type="operand">C.pl</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">2.874</e>
+        <e type="operand">10</e>
+        <e type="operand">9</e>
+        <e type="operator" args="1">-</e>
+        <e type="operator" args="2">^</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="149" left="0" top="3348" width="395" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math decimalPlaces="3" exponentialThreshold="2">
+      <input>
+        <e type="operand">τ.pl</e>
+        <e type="operand">τ.pup</e>
+        <e type="operand">τ.occ</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">τ.PSF</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">τ.ref</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">τ.fil</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">τ.pol</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">7.098</e>
+        <e type="operand">10</e>
+        <e type="operand">3</e>
+        <e type="operator" args="1">-</e>
+        <e type="operator" args="2">^</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="150" left="0" top="3393" width="348" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math decimalPlaces="3">
+      <input>
+        <e type="operand">r.coro</e>
+        <e type="operand">Φ</e>
+        <e type="operand">C.pl</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">A.col</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">τ.pl</e>
+        <e type="operand">mpix</e>
+        <e type="operator" args="2">/</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">QE</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <contract>
+        <e type="operand" style="unit">s</e>
+        <e type="operand">1</e>
+        <e type="operator" args="1">-</e>
+        <e type="operator" args="2">^</e>
+      </contract>
+      <result action="numeric">
+        <e type="operand">4.477</e>
+        <e type="operand">10</e>
+        <e type="operand">4</e>
+        <e type="operator" args="1">-</e>
+        <e type="operator" args="2">^</e>
+        <e type="operator" args="2">*</e>
+      </result>
+    </math>
+  </region>
+  <region id="151" left="351" top="3411" width="168" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>electrons per pixel</p>
+    </text>
+  </region>
+  <region id="152" left="0" top="3456" width="192" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>In a 500 sec exposure:</p>
+    </text>
+  </region>
+  <region id="153" left="0" top="3492" width="221" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math decimalPlaces="3">
+      <input>
+        <e type="operand">n.coro</e>
+        <e type="operand">500</e>
+        <e type="operand" style="unit">s</e>
+        <e type="operator" args="2">*</e>
+        <e type="operand">r.coro</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+      <result action="numeric">
+        <e type="operand">0.224</e>
+      </result>
+    </math>
+  </region>
+  <region id="154" left="243" top="3492" width="379" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>electrons in 1 pixel in a 500 second exposure</p>
+    </text>
+  </region>
+  <region id="155" top="4032" color="#000000" bgColor="#ffffff">
+    <area collapsed="true">
+      <title lang="eng">
+        <p>Zodi</p>
+      </title>
+    </area>
+    <region id="156" left="9" top="4068" width="101" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="4">
+        <input>
+          <e type="operand">mag.locZ</e>
+          <e type="operand">22</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="157" left="153" top="4077" width="403" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Current model is a simple number based on V band</p>
+      </text>
+    </region>
+    <region id="158" left="9" top="4113" width="76" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">n.exoZ</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="159" left="117" top="4113" width="396" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Exo-zodi brightness as a multiple of local zodi</p>
+      </text>
+    </region>
+    <region id="160" left="9" top="4158" width="606" height="53" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">zFluxDen</e>
+          <e type="operand">1</e>
+          <e type="operand">n.exoZ</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">λ</e>
+          <e type="operand">Δλ</e>
+          <e type="operand">mag.locZ</e>
+          <e type="function" args="3">fluxCurve</e>
+          <e type="operand" preserve="false" style="unit">arcsec</e>
+          <e type="operand">2</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">7.835</e>
+          <e type="operand">10</e>
+          <e type="operand">11</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="161" left="9" top="4221" width="319" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">τ.zodi</e>
+          <e type="operand">τ.pup</e>
+          <e type="operand">τ.occ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.ref</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.fil</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.pol</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.09</e>
+        </result>
+      </math>
+    </region>
+    <region id="162" left="9" top="4275" width="381" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">r.zodi</e>
+          <e type="operand">zFluxDen</e>
+          <e type="operand">dΩ.PSF</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">A.col</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.zodi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">QE</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.011</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="163" left="9" top="4329" width="482" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math decimalPlaces="3">
+        <input>
+          <e type="operand">old.zodi</e>
+          <e type="operand">zFluxDen</e>
+          <e type="operand">dΩ.PSF</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">A.col</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.PSF</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">τ.zodi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">QE</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8.987</e>
+          <e type="operand">10</e>
+          <e type="operand">4</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="164" left="495" top="4338" width="175" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>factor of 9 increase</p>
+      </text>
+    </region>
+    <region id="165" top="4374" color="#000000" bgColor="#ffffff">
+      <area terminator="true" />
+    </region>
+  </region>
+</regions>
