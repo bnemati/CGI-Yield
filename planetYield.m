@@ -8,7 +8,7 @@
 % This version is after checking the code over again prior to using it for
 % a trade study between detector architectures including MCP and CMOS
 %
-% Bijan Nemati - 28-Apr-2016
+% Bijan Nemati - 28-Apr-2016 
 
 clc; clear; close all;
 
